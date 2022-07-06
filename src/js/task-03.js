@@ -12,7 +12,7 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const galleruList = document.querySelector("gallery")
+const galleruList = document.querySelector(".gallery")
 //console.log(galleruList)
 const totalGalleru = images.map(({url,alt}) => {
   const imgList = galleruList.insertAdjacentElement(
