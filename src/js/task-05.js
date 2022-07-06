@@ -1,6 +1,5 @@
 
 const input = document.querySelector("#name-input")
-//console.log(input)
 const nameOutput = document.querySelector("#name-output")
 //console.log(nameOutput)
 
@@ -11,4 +10,4 @@ input.oninput = function() {
        nameOutput.innerHTML = input.value
     }
 };
-console.log(input)
+//console.log(input)
