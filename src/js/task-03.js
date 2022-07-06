@@ -12,14 +12,15 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const galleruList = document.querySelector(".gallery")
-//console.log(galleruList)
-const totalGalleru = images.map(({url,alt}) => {
-  const imgList = galleruList.insertAdjacentElement(
-    "beforeend",
-    <li class = "galleru-list">
-      <img class = "img-list" src="${url}" alt="${alt}"></img>
-    </li>
-  )
-  return imgList
-});
+const elementUl = document.querySelector('.gallery');
+//console.log(elementUl)
+images.forEach(el =>
+  elementUl.insertAdjacentHTML(
+    "afterbegin",
+    `<li>
+      <img src = "${el.url}" alt = "${el.alt}"  width = "300" height = "200"></img>
+    </li>`
+  ));
+
+  elementUl.setAttribute("style", "list-style-type:none; display: flex; justify-content: space-between;")
+  //console.log(elementUl)
