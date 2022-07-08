@@ -9,6 +9,7 @@ const decrement = document.querySelector("[data-action='decrement']");
 const totalValue = document.querySelector("#value") 
 
 let counterValue = 0;
+
 const inc = () => {
     counterValue += 1;
 
