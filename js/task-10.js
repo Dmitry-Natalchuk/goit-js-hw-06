@@ -23,7 +23,5 @@ function ondestroyBtn () {
   input.value = ""
 }
 
-
-
 destroyBtn.addEventListener("click", ondestroyBtn)
 createBtn.addEventListener("click", onCreatrBtn)
