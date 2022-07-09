@@ -12,7 +12,7 @@ input.oninput = function() {
         input.classList.remove("invalid");
         input.classList.add("valid");
     }
-    if ( input.value.length === 0) {
+    if ( input.value.length === 0 || input.value.trim() === "") {
         input.classList.toggle("invalid")
     }
 }

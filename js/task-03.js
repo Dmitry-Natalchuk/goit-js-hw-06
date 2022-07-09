@@ -14,13 +14,13 @@ const images = [
 ];
 const elementUl = document.querySelector('.gallery');
 //console.log(elementUl)
-images.forEach(el =>
+images.map(elem =>
   elementUl.insertAdjacentHTML(
     "afterbegin",
     `<li>
-      <img src = "${el.url}" alt = "${el.alt}"  width = "300" height = "200"></img>
+      <img src = "${elem.url}" alt = "${elem.alt}"  width = "200" height = "100"></img>
     </li>`
   ));
 
-  elementUl.setAttribute("style", "list-style-type:none; display: flex; justify-content: space-between;")
+  elementUl.setAttribute("style", "list-style-type:none; display: flex; justify-content: space-around; ")
   //console.log(elementUl)
