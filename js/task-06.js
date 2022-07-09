@@ -8,7 +8,7 @@ input.oninput = function() {
         input.classList.add("invalid");
         input.classList.remove("valid");
     }
-    if ( input.value.length > inputLength) {
+    if ( input.value.length >= inputLength) {
         input.classList.remove("invalid");
         input.classList.add("valid");
     }

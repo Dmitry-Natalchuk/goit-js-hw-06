@@ -19,8 +19,9 @@ function formSubmit (event) {
       if (password.value === "") {
         return alert ("Не вказали ваш пароль")
       }
-      console.log(`Email : ${email.value} \nPassword : ${password.value}`);
       event.currentTarget.reset();
+      console.log(`Email : ${email.value} \nPassword : ${password.value}`);
+      
 }
 
 
