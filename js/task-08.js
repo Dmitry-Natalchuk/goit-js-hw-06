@@ -2,7 +2,7 @@
 
 const form = document.querySelector(".login-form")
 //console.log(form)
-//console.log(btnForm)
+
 
 function formSubmit (event) {
     event.preventDefault();
