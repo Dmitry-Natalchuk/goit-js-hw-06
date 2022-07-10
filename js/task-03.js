@@ -13,14 +13,34 @@ const images = [
   },
 ];
 const elementUl = document.querySelector('.gallery');
+
+const galleryList = ({ url, alt }) => 
+      `<li><img src="${url}" alt="${alt}" width = "300" height = "200"/></li>`;
+//console.log(galleryList)
+
+const galleryReduce = images
+.reduce((acc, img) => acc + galleryList(img), "");
+
+elementUl.insertAdjacentHTML("afterbegin", galleryReduce)
+elementUl.setAttribute("style", "list-style-type:none; display: flex; justify-content: space-around; ")
+
+
+
+
+
+
+
+//const elementUl = document.querySelector('.gallery');
 //console.log(elementUl)
-images.map(elem =>
-  elementUl.insertAdjacentHTML(
-    "afterbegin",
+//images.forEach(elem =>
+ // elementUl.insertAdjacentHTML(
+    /* "afterbegin",
     `<li>
       <img src = "${elem.url}" alt = "${elem.alt}"  width = "200" height = "100"></img>
-    </li>`
-  ));
+    </li>` */
+ // ));
 
-  elementUl.setAttribute("style", "list-style-type:none; display: flex; justify-content: space-around; ")
+//  elementUl.setAttribute("style", "list-style-type:none; display: flex; justify-content: space-around; ")
   //console.log(elementUl)
+// =============================================
+
