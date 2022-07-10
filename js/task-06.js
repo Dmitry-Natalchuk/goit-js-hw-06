@@ -1,6 +1,7 @@
 
 let input = document.querySelector("#validation-input");
-const inputLength = input.getAttribute("data-length");
+const inputLength = input.getAttribute("data-length"); //6
+//console.log(inputLength) 
 
 
 input.oninput = function() {
@@ -16,3 +17,4 @@ input.oninput = function() {
         input.classList.toggle("invalid")
     }
 }
+//console.log(input.oninput)
