@@ -6,8 +6,8 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-
-const elementUl = document.querySelector("#ingredients")
+// 1)
+ const elementUl = document.querySelector("#ingredients")
 // console.log(elementUl)
 const elementIngredients = ingredients.map(ingredient => {
   const elementList = document.createElement("li");
@@ -16,5 +16,5 @@ const elementIngredients = ingredients.map(ingredient => {
   return elementList;
 })
 // console.log(elIngredients)
-elementUl.append(...elementIngredients)
+elementUl.append(...elementIngredients) 
 //console.log(elementUl)
